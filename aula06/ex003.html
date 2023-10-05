@@ -19,10 +19,13 @@
     <h1>Olá, Mundo!</h1> <!-- Como fazer comentário em HTML -->
     <p>Já me livrei da maldição</p>
     <script>
-        var name = window.prompt('Qual seu nome?') // Como fazer comentário em JavaScript
-        window.alert('É um grande prazer em te conhecer, ' + name + '!') // Sinal de + na ação chama-se: Concatenação!
-        var ajuda = window.prompt('Como posso te ajudar ' + name + '?')
-        window.alert('OK, só um instante ' + name + ' buscando ajuda para: ' + ajuda)
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // codigo entende como string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // codigo entende como string
+        // então converte com parseInt-(número inteiro) ou parseFloat-(número real)
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s) //Concatenação
+        // (number + number) é para adição
+        // (string + string) é para concatenação
     </script>
 </body>
 </html>
