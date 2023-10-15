@@ -19,11 +19,15 @@
     <h1>Olá, Mundo!</h1> <!-- Como fazer comentário em HTML -->
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // codigo entende como string
-        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // codigo entende como string
+        // # var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //codigo entende como string
+        var n1 = Number(window.prompt('Digite um número: '))
+        // # var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // codigo entende como string
+        var n2 = Number(window.prompt('Digite outro número: '))
         // então converte com parseInt-(número inteiro) ou parseFloat-(número real)
         var s = n1 + n2
-        window.alert('A soma dos valores é ' + s) //Concatenação
+        // # window.alert('A soma dos valores é ' + s) //Concatenação
+        // # window.alert('A soma dos valores é ' + String(s)) // de Number p/ String
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Template String - ($ = Chama-se Place Holder)
         // (number + number) é para adição
         // (string + string) é para concatenação
     </script>
