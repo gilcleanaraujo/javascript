@@ -108,14 +108,16 @@
             resultElement.innerHTML += `<p>Hora de Entrada: ${horaEntrada}</p>`;
             resultElement.innerHTML += `<p>Data de Saída: ${dataSaida}</p>`;
             resultElement.innerHTML += `<p>Hora de Saída: ${horaSaida}</p>`;
+            resultElement.innerHTML += `<p>Peso da Tara: ${pesoTara} kg</p>`;
+            resultElement.innerHTML += `<p>Peso Bruto: ${pesoBruto} kg</p>`;
             resultElement.innerHTML += `<p>Peso Líquido: ${pesoLiquido} kg</p>`;
             resultElement.innerHTML += `<p>O número de sacos é: ${numeroDeSacos}</p>`;
         }
-        
+
         function imprimirResultados() {
             var resultContent = document.getElementById('result').innerHTML;
             var printWindow = window.open('', '_blank');
-            printWindow.document.write('<html><head><title>Registro de pesagem</title></head><body>');
+            printWindow.document.write('<html><head><title>Resultados</title></head><body>');
             printWindow.document.write('<h2>Registro de pesagem</h2>');
             printWindow.document.write(resultContent);
         }
